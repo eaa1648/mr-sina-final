@@ -5,7 +5,6 @@
 *.key binary
 *.pem binary
 .env binary
-
 # Ensure line endings are consistent
 *.ts text eol=lf
 *.tsx text eol=lf
@@ -16,12 +15,11 @@
 *.css text eol=lf
 *.html text eol=lf
 *.py text eol=lf
-
 # Documentation files
 README.md linguist-documentation
 LICENSE linguist-documentation
-
 # Detect languages properly
 *.ts linguist-language=TypeScript
 *.tsx linguist-language=TypeScript
 *.py linguist-language=Python
+*.pt filter=lfs diff=lfs merge=lfs -text
